@@ -1,5 +1,8 @@
 # projeto-eng-soft-2
 
+#### Para Rodar o projeto local
+```python fastjobs/manage.py runserver```
+
 #### Para migrate local
 ```python fastjobs/manage.py migrate```
 
