@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    # command: python fastjobs/manage.py runserver
+    volumes:
+      - .:/src
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    networks:
+      - mynet
+
+  db:
+    image: postgres:13
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5434:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    networks:
+      - mynet
+
+volumes:
+  postgres_data:
+
+networks:
+    mynet:
+        driver: bridge
