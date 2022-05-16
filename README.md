@@ -6,6 +6,9 @@
 #### Para migrate local
 ```python fastjobs/manage.py migrate```
 
+#### Visualizar migrations
+```python fastjobs/manage.py showmigrations```
+
 #### Para criar superuser local
 ```python fastjobs/manage.py createsuperuser```
 
