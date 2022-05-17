@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cpf_field',
+    'app_site',
+    # 'social_django',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +84,27 @@ DATABASES = {
     }
 }
 
+# AUTHENTICATION_BACKENDS = [
+#     'social_core.backends.google.GoogleOAuth2',
+#     'django.contrib.auth.backends.ModelBackend',
+# ]
+
+# TEMPLATES = [
+#     {
+#         'OPTIONS': {
+#             'context_processors': [
+#                 # Adicione as linhas abaixo
+#                 'social_django.context_processors.backends',
+#                 'social_django.context_processors.login_redirect',
+#             ],
+#         },
+#     },
+# ]
+
+# LOGIN_URL = 'login'
+# LOGIN_REDIRECT_URL = 'index'
+# LOGOUT_URL = 'logout'
+# LOGOUT_REDIRECT_URL = 'login'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
